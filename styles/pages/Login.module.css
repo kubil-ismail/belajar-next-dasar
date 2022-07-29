@@ -1,0 +1,95 @@
+/* SIDE LEFT */
+.root {
+  overflow-x: hidden;
+}
+
+.loginLeft {
+  background-color: blue;
+  height: 100vh;
+  background-image: url("/images/login-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bgOverlay {
+  height: 100vh;
+  background-color: #efc81a;
+  width: 49.2%;
+  position: absolute;
+  opacity: 0.7;
+}
+
+.loginLeft p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 23px;
+  color: #ffffff;
+  position: absolute;
+}
+
+@media only screen and (max-width: 768px) {
+  .loginLeft {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/* SIDE RIGHT */
+.loginRight {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.loginRight h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #efc81a;
+  text-align: center;
+}
+
+.loginRight p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #8692a6;
+}
+
+.loginRightFooter p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #999999;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.loginRightFooter a {
+  color: #efc81a;
+  text-decoration: none;
+}
+
+/* desktop only */
+.formControl input {
+  width: 426px;
+}
+
+/* mobile only */
+@media only screen and (max-width: 768px) {
+  .formControl input {
+    width: 320px;
+  }
+}
