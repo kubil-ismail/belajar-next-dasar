@@ -83,13 +83,15 @@
 }
 
 /* desktop only */
-.formControl input {
+.formControl input,
+.alert {
   width: 426px;
 }
 
 /* mobile only */
 @media only screen and (max-width: 768px) {
-  .formControl input {
+  .formControl input,
+  .alert {
     width: 320px;
   }
 }
