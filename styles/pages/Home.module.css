@@ -1,0 +1,63 @@
+/* GLOBAL */
+.newRecipe h3,
+.popularForYou h3,
+.popularRecipe h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #3f3a3a;
+}
+
+/* Searchbar Section */
+.searchBar {
+  width: 30vw;
+  margin-top: 20px;
+  background-color: #efefef !important;
+  border-radius: 200px;
+}
+
+.searchBar div {
+  border-radius: 20px !important;
+}
+
+.searchBar span {
+  background-color: transparent !important;
+
+  border: none !important;
+}
+
+.searchBar input {
+  border: none !important;
+  background-color: #efefef !important;
+  border-radius: 0px 200px 200px 0px;
+}
+
+/* New Recipe Section */
+.newRecipe {
+  margin: 40px 0px;
+}
+
+/* Popular For you Section */
+.popularForYou {
+  margin: 40px 0px;
+}
+
+.popularRecipe h6 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #666666;
+}
+
+.popularRecipe p,
+.popularRecipe span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: #b6b6b6;
+}

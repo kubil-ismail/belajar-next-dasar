@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import { Provider, useSelector } from "react-redux";
 
 import "../styles/globals.css";
+import "../styles/pages/Home.css";
 import "bootstrap/dist/css/bootstrap.css";
 
 export default class MyApp extends App {
@@ -36,20 +37,20 @@ const MainApp = ({ Component, pageProps }) => {
   const router = useRouter();
   const { auth } = useSelector((state) => state);
 
-  React.useEffect(() => {
-    if (router.pathname !== "/register" && !auth?.token) {
-      router.replace("/login");
-    }
+  // React.useEffect(() => {
+  //   if (router.pathname !== "/register" && !auth?.token) {
+  //     router.replace("/login");
+  //   }
 
-    // check if already have token
-    if (router.pathname === "/login" && auth?.token) {
-      router.replace("/");
-    }
+  //   // check if already have token
+  //   if (router.pathname === "/login" && auth?.token) {
+  //     router.replace("/");
+  //   }
 
-    if (router.pathname === "/register" && auth?.token) {
-      router.replace("/");
-    }
-  });
+  //   if (router.pathname === "/register" && auth?.token) {
+  //     router.replace("/");
+  //   }
+  // });
 
   return <Component {...pageProps} />;
 };

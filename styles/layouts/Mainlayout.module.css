@@ -1,0 +1,8 @@
+.root {
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding-bottom: 10vh;
+}
