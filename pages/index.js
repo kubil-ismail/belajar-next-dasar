@@ -181,7 +181,7 @@ export default function Home() {
                     </div>
                     <div className="col-10">
                       <div style={{ marginLeft: "20px" }}>
-                        <h6>Lotek mba ni'mah</h6>
+                        <h6>Lotek mba ni&apos;mah</h6>
                         <p>Spicy, Salted, Tasty</p>
                         <div className="d-flex gap-1 align-items-center">
                           <img

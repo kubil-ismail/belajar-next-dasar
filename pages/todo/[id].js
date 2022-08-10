@@ -17,9 +17,11 @@ export async function getStaticPaths() {
   ).then((response) => response.json());
 
   return {
-    paths: request.map((item) => ({ params: { id: item?.id?.toString() } })),
+    paths: request.map((item) => ({
+      params: { id: item?.id?.toString() },
+    })),
     fallback: false, // can also be true or 'blocking'
-    revalidate: 60 * 60, // In seconds
+    // revalidate: 60 * 60, // In seconds
   };
 }
 
