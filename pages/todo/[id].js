@@ -5,7 +5,7 @@ function Blog(props) {
   return (
     <h1>
       {props?.todo?.title}
-      <p onClick={() => (window.location.href = "/login")}>click me</p>
+      <p onClick={() => (window.location.href = "/login")}>click mee</p>
     </h1>
   );
 }
