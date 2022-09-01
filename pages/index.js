@@ -14,6 +14,9 @@ import MainLayout from "../layouts/MainLayout";
 import style from "../styles/pages/Home.module.css";
 import Link from "next/link";
 
+import { database } from "../firebase";
+import { ref, set, userId } from "firebase/database";
+
 const settings = {
   dots: true,
   infinite: false,
@@ -26,6 +29,26 @@ export default function Home() {
   const dispatch = useDispatch();
   const router = useRouter();
 
+  React.useEffect(() => {
+    const starCountRef = ref(database, `messages/1`);
+
+    set(starCountRef, {
+      message: "Lorem ipsum",
+      message_time: new Date().getTime(),
+      user_id: 1,
+      status_profile: "Available",
+      status_online: "on",
+      message_status: "sended",
+      message_type: "text",
+    });
+
+    // onValue(starCountRef, (snapshot) => {
+    //   const data = snapshot.val();
+    //   console.log("data", data);
+
+    //   // updateStarCount(postElement, data);
+    // });
+  }, []);
 
   return (
     <div id="home" className={styles.container}>
